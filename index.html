@@ -7,15 +7,15 @@
   <style>
     body {
       margin: 0;
-      padding: 20px;
-      font-family: 'Arial', sans-serif;
+      padding: 30px 20px;
+      font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
       color: #fff;
       text-align: center;
     }
 
     .perfil {
-      max-width: 400px;
+      max-width: 500px;
       margin: auto;
     }
 
@@ -29,7 +29,7 @@
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       margin-bottom: 10px;
     }
 
@@ -38,37 +38,31 @@
       margin-bottom: 30px;
     }
 
-    .link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #ffd700;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 14px 20px;
-      margin: 10px auto;
-      width: 90%;
-      max-width: 350px;
-      border-radius: 30px;
-      transition: 0.3s ease;
+    .link-imagem {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 15px auto;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
     }
 
-    .link:hover {
-      background-color: #e6c200;
-      transform: scale(1.05);
+    .link-imagem:hover {
+      transform: scale(1.03);
     }
 
-    .link img {
-      width: 24px;
-      height: 24px;
-      margin-right: 12px;
+    .link-imagem img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 16px;
     }
 
     footer {
       margin-top: 40px;
       font-size: 0.9rem;
-      color: #555;
+      color: #666;
     }
   </style>
 </head>
@@ -76,36 +70,31 @@
   <div class="perfil">
     <img src="sua-imagem.jpg" alt="Foto de perfil" class="foto-perfil" />
     <h1>Thurzin Trader</h1>
-    <p>Acesse todos os meus conteúdos e plataformas em um só lugar!</p>
+    <p>Escolha uma das opções abaixo para acessar meus conteúdos:</p>
 
-    <a href="https://corretora.com/seu-link" class="link">
-      <img src="https://cdn-icons-png.flaticon.com/512/3602/3602123.png" alt="Corretora" />
-      Corretora Oficial
+    <!-- BOTÕES DE IMAGEM -->
+    <a href="https://corretora.com/seulink" class="link-imagem">
+      <img src="imagens/corretora.png" alt="Corretora Oficial" />
     </a>
 
-    <a href="https://wa.me/seu-numero" class="link">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-      Fale Comigo no WhatsApp
+    <a href="https://wa.me/seunumero" class="link-imagem">
+      <img src="imagens/whatsapp.png" alt="Fale comigo no WhatsApp" />
     </a>
 
-    <a href="https://youtube.com/seucanal" class="link">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
-      Canal no YouTube
+    <a href="https://youtube.com/seucanal" class="link-imagem">
+      <img src="imagens/youtube.png" alt="YouTube Oficial" />
     </a>
 
-    <a href="https://tiktok.com/@seudominio" class="link">
-      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" />
-      TikTok Oficial
+    <a href="https://tiktok.com/@seutiktok" class="link-imagem">
+      <img src="imagens/tiktok.png" alt="TikTok Oficial" />
     </a>
 
-    <a href="https://instagram.com/seuusuario" class="link">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
-      Instagram
+    <a href="https://instagram.com/seuusuario" class="link-imagem">
+      <img src="imagens/instagram.png" alt="Instagram Oficial" />
     </a>
 
-    <a href="https://linkdasuasalasinais.com" class="link">
-      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Sinais" />
-      Entrar na Sala de Sinais
+    <a href="https://linkdasalasinais.com" class="link-imagem">
+      <img src="imagens/sala-de-sinais.png" alt="Sala de Sinais" />
     </a>
   </div>
 
