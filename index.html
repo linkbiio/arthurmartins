@@ -4,9 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arthur Martins | Link da Bio</title>
-  <meta name="description" content="Arthur Martins - Trader profissional de opções binárias. Acesse todos os meus links aqui.">
-  <meta property="og:image" content="imagens/foto-topo.jpg">
-  <meta property="og:title" content="Arthur Martins | Trader Profissional">
   <style>
     body {
       margin: 0;
@@ -15,21 +12,12 @@
       background: #000;
       color: #fff;
       text-align: center;
+      overflow-x: hidden;
     }
 
     .container {
       max-width: 520px;
       margin: auto;
-    }
-
-    .imagem-topo {
-      width: 100%;
-      max-width: 500px;
-      height: auto;
-      display: block;
-      margin: 0 auto 20px auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #cccccc80;
     }
 
     .titulo {
@@ -41,9 +29,26 @@
 
     .subtitulo {
       font-size: 1.2rem;
-      color: #aaa;
+      color: #ccc;
       margin-bottom: 40px;
       line-height: 1.5;
+    }
+
+    .imagem-topo {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px auto;
+      border-radius: 12px;
+      border: 3px solid #ccc;
+      box-shadow: 0 0 15px #00000080;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .imagem-topo:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #ccc;
     }
 
     .botao-imagem {
@@ -53,13 +58,14 @@
       border-radius: 22px;
       overflow: hidden;
       border: 2px solid #ccc;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 10px #cccccc80;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+      animation: slideUp 0.7s ease both;
     }
 
     .botao-imagem:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 25px #ccccccaa;
+      box-shadow: 0 0 25px #ccc;
+      filter: brightness(1.1);
     }
 
     .botao-imagem img {
@@ -68,14 +74,12 @@
       display: block;
     }
 
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 0.8s ease-out forwards;
-    }
-
-    @keyframes fadeIn {
-      to {
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
         opacity: 1;
         transform: translateY(0);
       }
@@ -90,40 +94,30 @@
 </head>
 <body>
   <div class="container">
-    <img src="imagens/foto-topo.jpg" alt="Arthur Martins" class="imagem-topo fade-in" />
-    <div class="titulo fade-in">Arthur Martins</div>
-    <div class="subtitulo fade-in">
-      Vivendo do mercado de OB<br>
-      +7 dígitos no Digital<br>
-      Operando há mais de 4 anos nesse mercado.
-    </div>
+    <div class="titulo">Arthur Martins</div>
+    <div class="subtitulo">Vivendo do mercado de OB<br>+7 no Digital<br>Operando há mais de 4 anos nesse mercado</div>
+    <img src="imagens/foto-topo.jpg" alt="Arthur Martins" class="imagem-topo" />
 
-    <!-- Botões -->
-    <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem fade-in" target="_blank">
+    <!-- Botões com bordas prateadas e efeito restaurado -->
+    <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" target="_blank">
       <img src="imagens/botao-corretora.png" alt="Corretora" />
     </a>
-
-    <a href="https://wa.me/5522992568259?text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho!" class="botao-imagem fade-in" target="_blank">
+    <a href="https://wa.me/5522992568259?text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho!" class="botao-imagem" target="_blank">
       <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
     </a>
-
-    <a href="https://www.youtube.com/@thurzintrader" class="botao-imagem fade-in" target="_blank">
+    <a href="https://www.youtube.com/@thurzintrader" class="botao-imagem" target="_blank">
       <img src="imagens/botao-youtube.png" alt="YouTube" />
     </a>
-
-    <a href="https://www.tiktok.com/@eusouarthurmartins?is_from_webapp=1&sender_device=pc" class="botao-imagem fade-in" target="_blank">
+    <a href="https://www.tiktok.com/@eusouarthurmartins?is_from_webapp=1&sender_device=pc" class="botao-imagem" target="_blank">
       <img src="imagens/botao-tiktok.png" alt="TikTok" />
     </a>
-
-    <a href="https://instagram.com/seuusuario" class="botao-imagem fade-in" target="_blank">
+    <a href="https://instagram.com/seuusuario" class="botao-imagem" target="_blank">
       <img src="imagens/botao-instagram.png" alt="Instagram" />
     </a>
-
-    <a href="https://t.me/RBOB146" class="botao-imagem fade-in" target="_blank">
+    <a href="https://t.me/RBOB146" class="botao-imagem" target="_blank">
       <img src="imagens/botao-sinais.png" alt="Sala de Sinais" />
     </a>
-
-    <a href="https://eusouarthurmartins.github.io/portf-lio/#compra" class="botao-imagem fade-in" target="_blank">
+    <a href="https://eusouarthurmartins.github.io/portf-lio/#compra" class="botao-imagem" target="_blank">
       <img src="imagens/botao-paginadevendas.png" alt="Página de Vendas" />
     </a>
   </div>
