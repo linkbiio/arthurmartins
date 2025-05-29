@@ -40,7 +40,7 @@
       display: block;
       margin: 0 auto 30px auto;
       border-radius: 12px;
-      box-shadow: 0 0 18px #bbb; /* sombra prateada suave */
+      box-shadow: 0 0 18px #bbb;
       object-fit: cover;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
       cursor: pointer;
@@ -48,8 +48,8 @@
     }
 
     .imagem-topo:hover {
-      transform: scale(1.03); /* só aumenta, sem girar */
-      box-shadow: 0 0 30px #ccc; /* sombra prateada mais clara */
+      transform: scale(1.03);
+      box-shadow: 0 0 30px #ccc;
     }
 
     .botao-imagem {
@@ -58,15 +58,14 @@
       margin: 18px 0;
       border-radius: 22px;
       overflow: hidden;
-      border: 3px solid #bbb; /* borda prateada para os botões */
-      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, border-color 0.3s ease;
+      border: 3px solid #bbb; /* borda prateada fixa */
+      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     }
 
     .botao-imagem:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 25px #ffd70088;
-      filter: brightness(1.1);
-      border-color: #ffd700; /* muda a borda para dourado no hover */
+      box-shadow: 0 0 20px #ccc;
+      filter: brightness(1.05);
     }
 
     .botao-imagem img {
@@ -90,7 +89,7 @@
 
     <img src="imagens/foto-topo.jpg" alt="Arthur Martins" class="imagem-topo" />
 
-    <!-- Botões com imagens e links atualizados -->
+    <!-- Botões -->
     <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" target="_blank">
       <img src="imagens/botao-corretora.png" alt="Corretora" />
     </a>
