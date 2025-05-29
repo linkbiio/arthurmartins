@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arthur Martins | Link da Bio</title>
+  <meta name="description" content="Arthur Martins - Trader profissional de opções binárias. Acesse todos os meus links aqui.">
+  <meta property="og:image" content="imagens/foto-topo.jpg">
+  <meta property="og:title" content="Arthur Martins | Trader Profissional">
   <style>
     body {
       margin: 0;
@@ -19,37 +22,29 @@
       margin: auto;
     }
 
-    .titulo {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #ffd700;
-      margin-bottom: 10px;
-    }
-
-    .subtitulo {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-bottom: 40px;
-      line-height: 1.5;
-    }
-
     .imagem-topo {
       width: 100%;
       max-width: 500px;
       height: auto;
       display: block;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 20px auto;
       border-radius: 12px;
-      box-shadow: 0 0 18px #bbb;
-      object-fit: cover;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-      cursor: pointer;
-      border: 3px solid #bbb; /* borda prateada */
+      box-shadow: 0 0 15px #cccccc80;
+      transition: transform 0.3s ease;
     }
 
-    .imagem-topo:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 30px #ccc;
+    .titulo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .subtitulo {
+      font-size: 1.2rem;
+      color: #aaa;
+      margin-bottom: 40px;
+      line-height: 1.5;
     }
 
     .botao-imagem {
@@ -58,20 +53,56 @@
       margin: 18px 0;
       border-radius: 22px;
       overflow: hidden;
-      border: 3px solid #bbb; /* borda prateada fixa */
-      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #cccccc80;
     }
 
     .botao-imagem:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px #ccc;
-      filter: brightness(1.05);
+      box-shadow: 0 0 25px #ccccccaa;
     }
 
     .botao-imagem img {
       width: 100%;
       height: auto;
       display: block;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .provas-sociais {
+      margin-top: 50px;
+    }
+
+    .provas-sociais h2 {
+      font-size: 1.4rem;
+      color: #ddd;
+      margin-bottom: 15px;
+    }
+
+    .whatsapp-fixo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      z-index: 999;
+    }
+
+    .whatsapp-fixo img {
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #25D366;
     }
 
     footer {
@@ -83,41 +114,54 @@
 </head>
 <body>
   <div class="container">
-
-    <div class="titulo">Arthur Martins</div>
-    <div class="subtitulo">Vivendo do mercado de ob, + 7 no Digital, estou operando há mais de 4 anos nesse mercado</div>
-
-    <img src="imagens/foto-topo.jpg" alt="Arthur Martins" class="imagem-topo" />
+    <img src="imagens/foto-topo.jpg" alt="Arthur Martins" class="imagem-topo fade-in" />
+    <div class="titulo fade-in">Arthur Martins</div>
+    <div class="subtitulo fade-in">
+      Vivendo do mercado de OB<br>
+      +7 dígitos no Digital<br>
+      Operando há mais de 4 anos nesse mercado.
+    </div>
 
     <!-- Botões -->
-    <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" target="_blank">
+    <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem fade-in" target="_blank">
       <img src="imagens/botao-corretora.png" alt="Corretora" />
     </a>
 
-    <a href="https://wa.me/5522992568259?text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho!" class="botao-imagem" target="_blank">
+    <a href="https://wa.me/5522992568259?text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho!" class="botao-imagem fade-in" target="_blank">
       <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
     </a>
 
-    <a href="https://www.youtube.com/@thurzintrader" class="botao-imagem" target="_blank">
+    <a href="https://www.youtube.com/@thurzintrader" class="botao-imagem fade-in" target="_blank">
       <img src="imagens/botao-youtube.png" alt="YouTube" />
     </a>
 
-    <a href="https://www.tiktok.com/@eusouarthurmartins?is_from_webapp=1&sender_device=pc" class="botao-imagem" target="_blank">
+    <a href="https://www.tiktok.com/@eusouarthurmartins?is_from_webapp=1&sender_device=pc" class="botao-imagem fade-in" target="_blank">
       <img src="imagens/botao-tiktok.png" alt="TikTok" />
     </a>
 
-    <a href="https://instagram.com/seuusuario" class="botao-imagem" target="_blank">
+    <a href="https://instagram.com/seuusuario" class="botao-imagem fade-in" target="_blank">
       <img src="imagens/botao-instagram.png" alt="Instagram" />
     </a>
 
-    <a href="https://t.me/RBOB146" class="botao-imagem" target="_blank">
+    <a href="https://t.me/RBOB146" class="botao-imagem fade-in" target="_blank">
       <img src="imagens/botao-sinais.png" alt="Sala de Sinais" />
     </a>
 
-    <a href="https://eusouarthurmartins.github.io/portf-lio/#compra" class="botao-imagem" target="_blank">
+    <a href="https://eusouarthurmartins.github.io/portf-lio/#compra" class="botao-imagem fade-in" target="_blank">
       <img src="imagens/botao-paginadevendas.png" alt="Página de Vendas" />
     </a>
+
+    <!-- Provas sociais -->
+    <div class="provas-sociais fade-in">
+      <h2>Resultados dos meus alunos</h2>
+      <img src="imagens/resultados.jpg" alt="Resultados" style="width:100%; border-radius:12px;">
+    </div>
   </div>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5522992568259?text=Quero%20saber%20mais%20sobre%20o%20seu%20trabalho!" class="whatsapp-fixo" target="_blank">
+    <img src="imagens/icone-whatsapp.png" alt="WhatsApp">
+  </a>
 
   <footer>
     © 2025 Arthur Martins. Todos os direitos reservados.
