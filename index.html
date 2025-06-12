@@ -21,14 +21,13 @@
     }
 
     .faixa-carrossel {
-  width: 100%;
-  overflow: hidden;
-  background-color: #000000; /* preto sólido */
-  height: 60px;
-  border-top: 2px solid #222; /* bordas um pouco mais escuras */
-  border-bottom: 2px solid #222;
-}
-
+      width: 100%;
+      overflow: hidden;
+      background-color: #000000; /* preto sólido */
+      height: 60px;
+      border-top: 2px solid #222; /* bordas um pouco mais escuras */
+      border-bottom: 2px solid #222;
+    }
 
     .carrossel-conteudo {
       display: flex;
@@ -68,6 +67,7 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      flex-direction: column; /* para alinhar a imagem e o texto verticalmente */
     }
 
     .imagem-destaque {
@@ -79,6 +79,13 @@
 
     .imagem-destaque:hover {
       transform: scale(1.05);
+    }
+
+    /* Texto abaixo da imagem */
+    .texto-embaixo {
+      color: #fff;
+      margin-top: 15px;
+      font-size: 1.2rem;
     }
 
     .botoes {
@@ -191,18 +198,17 @@
       <img src="imagens/logo.png" alt="Logo" />
       <img src="imagens/logo.png" alt="Logo" />
       <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
       
       <!-- ... -->
       <!-- Copie mais logos se quiser repetir o efeito contínuo -->
     </div>
   </div>
 
- <div class="foto-container">
-  <img src="imagens/minhafoto.png" alt="Foto" class="imagem-destaque" />
-  <div style="color: #fff; margin-top: 10px; font-size: 1.2rem;">Algumas ferramentas que vão te ajudar!</div>
-</div>
-
+  <!-- Imagem principal -->
+  <div class="foto-container">
+    <img src="imagens/minhafoto.png" alt="Foto" class="imagem-destaque" />
+    <div class="texto-embaixo">Seu texto aqui</div>
+  </div>
 
   <!-- Botões -->
   <div class="container" id="botoes">
