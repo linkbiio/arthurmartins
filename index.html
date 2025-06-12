@@ -8,6 +8,71 @@
   <meta property="og:image" content="imagens/minhafoto.png">
   <meta property="og:title" content="Arthur Martins | Trader Profissional">
   <style>
+
+
+.foto-container {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 0 auto 30px;
+}
+
+.foto-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff30, #ff00cc10);
+  animation: brilho 3s infinite ease-in-out;
+  z-index: 0;
+  filter: blur(30px);
+}
+
+.imagem-destaque {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 0 25px #ff00cc80;
+}
+
+@keyframes brilho {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .foto-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .foto-container::before {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
+    
     body {
       margin: 0;
       padding: 30px 20px;
@@ -151,7 +216,10 @@
   <div class="container">
     <!-- FOTO COM AURA -->
     <div class="foto-container">
-      <img src="imagens/minhafoto.png" alt="Arthur Martins" class="imagem-destaque" />
+      <div class="foto-container fade-in" style="animation-delay: 0.2s;">
+  <img src="imagens/minhafoto.png" alt="Arthur Martins" class="imagem-destaque" />
+</div>
+
     </div>
 
     <h1 class="titulo">Arthur Martins</h1>
