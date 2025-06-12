@@ -12,10 +12,10 @@
       margin: 0;
       padding: 30px 20px;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #000000, #1c1c1c, #2e2e2e);
+      background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #0a0a0a);
       background-size: 400% 400%;
       animation: backgroundMove 25s ease infinite;
-      color: #e0e0e0;
+      color: #fff;
       text-align: center;
     }
 
@@ -34,15 +34,16 @@
     .foto-container {
       position: relative;
       width: 100%;
-      max-width: 1000px;
-      height: 400px;
-      margin: 0 auto 30px;
+      max-width: 1200px;
+      height: 500px;
+      margin: 0 auto 40px;
       background-image: url('imagens/banner-topo.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      border-radius: 20px;
-      box-shadow: 0 0 40px #bbbbbbcc;
+      border-radius: 24px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 50px #d4d4d4cc, 0 10px 60px #ffffff1a inset;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -52,10 +53,9 @@
     .imagem-destaque {
       max-width: 80%;
       max-height: 80%;
-      border-radius: 0;
       object-fit: contain;
       border: none;
-      box-shadow: 0 0 20px #ffffffcc;
+      box-shadow: 0 0 15px #ffffffcc;
       position: relative;
       z-index: 2;
       transition: transform 0.3s ease;
@@ -69,7 +69,7 @@
       .foto-container {
         width: 95vw;
         height: 280px;
-        border-radius: 12px;
+        border-radius: 14px;
       }
 
       .imagem-destaque {
@@ -79,15 +79,15 @@
     }
 
     .titulo {
-      font-size: 2.7rem;
+      font-size: 2.5rem;
       font-weight: bold;
-      color: #d1d1d1;
+      color: #ddd;
       margin-bottom: 10px;
     }
 
     .subtitulo {
       font-size: 1.2rem;
-      color: #b0b0b0;
+      color: #aaa;
       margin-bottom: 40px;
       line-height: 1.5;
     }
@@ -104,8 +104,8 @@
       max-width: 100%;
       border-radius: 30px;
       overflow: hidden;
-      border: 2px solid #aaa;
-      box-shadow: 0 0 20px #cccccc88;
+      border: 2px solid #ccc;
+      box-shadow: 0 0 15px #ccccccaa;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       opacity: 0;
       transform: translateY(20px);
@@ -120,7 +120,7 @@
 
     .botao-imagem:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 25px #eeeeeeaa;
+      box-shadow: 0 0 25px #ccccccaa;
     }
 
     @keyframes fadeIn {
@@ -148,7 +148,7 @@
     footer {
       margin-top: 50px;
       font-size: 0.85rem;
-      color: #888;
+      color: #777;
     }
   </style>
 </head>
