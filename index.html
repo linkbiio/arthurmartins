@@ -34,13 +34,13 @@
     .foto-container {
       position: relative;
       width: 100vw;
-      height: auto;
-      margin: 60px auto 40px;
+      height: 500px;
+      margin: 0 auto 40px;
+      background-color: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      background: none;
     }
 
     .imagem-destaque {
@@ -60,6 +60,7 @@
     @media (max-width: 768px) {
       .foto-container {
         width: 95vw;
+        height: 280px;
         border-radius: 14px;
       }
 
@@ -76,11 +77,19 @@
       margin-bottom: 10px;
     }
 
-    .subtitulo {
-      font-size: 1.2rem;
-      color: #aaa;
-      margin-bottom: 40px;
-      line-height: 1.5;
+    .seta-para-baixo {
+      font-size: 3.5rem;
+      animation: bounce 2s infinite;
+      margin-bottom: 30px;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
     }
 
     .botoes {
@@ -144,14 +153,13 @@
   </style>
 </head>
 <body>
-
   <div class="foto-container">
     <img src="imagens/minhafoto.png" alt="Arthur Martins" class="imagem-destaque" />
   </div>
 
   <div class="container">
     <h1 class="titulo">Arthur Martins</h1>
-    <p class="subtitulo">Trader profissional de opções binárias<br>Confira abaixo minhas principais ferramentas!</p>
+    <div class="seta-para-baixo">⬇️</div>
 
     <div class="botoes">
       <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
@@ -171,20 +179,18 @@
       </a>
 
       <a href="https://www.youtube.com/channel/UCgBj1Oea0IRNhSaYKIQ0w1g" class="botao-imagem" style="animation-delay: 2.2s;" target="_blank">
-  <img src="imagens/botao-youtube.png" alt="YouTube" />
-</a>
+        <img src="imagens/botao-youtube.png" alt="YouTube" />
+      </a>
 
-<a href="#" class="botao-imagem" style="animation-delay: 2.4s;" target="_blank">
-  <!-- Atualize o link acima quando tiver o Instagram -->
-  <img src="imagens/botao-instagram.png" alt="Instagram" />
-</a>
-
+      <a href="#" class="botao-imagem" style="animation-delay: 2.4s;" target="_blank">
+        <!-- Atualize o link acima quando tiver o Instagram -->
+        <img src="imagens/botao-instagram.png" alt="Instagram" />
+      </a>
     </div>
   </div>
 
   <footer>
     © 2025 Arthur Martins. Todos os direitos reservados.
   </footer>
-
 </body>
 </html>
