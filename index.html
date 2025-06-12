@@ -86,16 +86,16 @@
       }
     }
 
-    /* NOVO: botões 3 em 3 no desktop, 1 em 1 no mobile */
     .botoes {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       gap: 30px;
     }
 
     .botao-imagem {
       width: 100%;
+      max-width: 100%;
       border-radius: 30px;
       overflow: hidden;
       border: 2px solid #ccc;
@@ -135,8 +135,7 @@
 
     @media (min-width: 768px) {
       .botao-imagem {
-        width: calc((100% - 60px) / 3); /* 3 botões por linha, descontando gap */
-        max-width: none;
+        width: 48%;
       }
     }
 
@@ -145,69 +144,112 @@
       font-size: 0.85rem;
       color: #777;
     }
-
   </style>
+
+
+
 </head>
 <body>
   <div class="foto-container">
     <img src="imagens/minhafoto.png" alt="Foto" class="imagem-destaque" />
   </div>
 
-  <!-- Faixa Carrossel -->
-  <div class="faixa-carrossel">
-    <div class="carrossel-conteudo">
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <!-- (mais logos conforme seu código) -->
-    </div>
+
+
+
+
+
+
+  
+
+<!-- Faixa Carrossel -->
+<div class="faixa-carrossel">
+  <div class="carrossel-conteudo">
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+   <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
+    <img src="imagens/logo.png" alt="Logo" />
   </div>
+</div>
 
-  <style>
-    .faixa-carrossel {
-      width: 100%;
-      overflow: hidden;
-      background: #111;
-      height: 60px;
-      border-top: 2px solid #444;
-      border-bottom: 2px solid #444;
-    }
+<style>
+.faixa-carrossel {
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+  height: 60px; /* Altura da faixa */
+  border-top: 2px solid #444;
+  border-bottom: 2px solid #444;
+}
 
-    .carrossel-conteudo {
-      display: flex;
-      align-items: center;
-      animation: scrollCarrossel 20s linear infinite;
-    }
+.carrossel-conteudo {
+  display: flex;
+  align-items: center;
+  animation: scrollCarrossel 20s linear infinite;
+}
 
-    .carrossel-conteudo img {
-      height: 40px;
-      margin: 0 30px;
-      opacity: 0.9;
-      transition: transform 0.3s;
-    }
+.carrossel-conteudo img {
+  height: 40px; /* Altura da logo */
+  margin: 0 30px;
+  opacity: 0.9;
+  transition: transform 0.3s;
+}
 
-    .carrossel-conteudo img:hover {
-      transform: scale(1.1);
-      opacity: 1;
-    }
+.carrossel-conteudo img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
 
-    @keyframes scrollCarrossel {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-  </style>
+@keyframes scrollCarrossel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+</style>
 
+
+
+
+
+
+
+
+
+  
   <div class="container" id="botoes">
     <div class="botoes">
       <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
