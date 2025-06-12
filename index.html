@@ -23,15 +23,14 @@
     }
 
     .imagem-topo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px;
-  box-shadow: 0 0 15px #cccccc80;
-}
-
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px;
+      box-shadow: 0 0 15px #cccccc80;
+    }
 
     .titulo {
       font-size: 2.5rem;
@@ -47,21 +46,25 @@
       line-height: 1.5;
     }
 
-    .botao-imagem {
-  display: block;
-  width: 100%;
-  max-width: 550px;
-  margin: 22px auto;
-  border-radius: 30px;
-  overflow: hidden;
-  border: 2px solid #ccc;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 15px #ccccccaa;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.8s ease-out forwards;
-}
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
 
+    .botao-imagem {
+      display: block;
+      width: 100%;
+      max-width: 550px;
+      border-radius: 30px;
+      overflow: hidden;
+      border: 2px solid #ccc;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 15px #ccccccaa;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
 
     .botao-imagem:hover {
       transform: scale(1.05);
@@ -87,84 +90,50 @@
       color: #777;
     }
 
-
-
-
-
-
-
-
-    
     @media (min-width: 768px) {
-  .botao-imagem {
-    max-width: 650px;
-    margin: 24px auto;
-    border-radius: 32px;
-  }
-}
+      .botoes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
 
+      .botao-imagem {
+        width: 48%;
+        max-width: none;
+        margin: 0;
+        border-radius: 32px;
+      }
+    }
   </style>
-
-
-
-
-  
-  
 </head>
 <body>
   <div class="container">
-<img src="imagens/minhafoto.png" alt="Arthur Martins" class="imagem-topo fade-in" style="animation-delay: 0.2s;" />
-
-
-
-
-
-
-
-
-
+    <img src="imagens/minhafoto.png" alt="Arthur Martins" class="imagem-topo fade-in" style="animation-delay: 0.2s;" />
 
     <div class="subtitulo fade-in" style="animation-delay: 0.6s;">
-     
       Algumas ferramentas que vão ajudar você nesse mercado!
     </div>
-   
-   
 
+    <!-- Botões agrupados -->
+    <div class="botoes">
+      <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
+        <img src="imagens/botao-corretora.png" alt="Corretora" />
+      </a>
 
+      <a href="https://wa.me/5522992568259?text=Quero%20agendar%20uma%20alavancagem!" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
+        <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
+      </a>
 
+      <a href="https://t.me/RBOB146" class="botao-imagem" style="animation-delay: 1.8s;" target="_blank">
+        <img src="imagens/botao-sinais.png" alt="Sala de Sinais" />
+      </a>
 
-
-
-
-
-
-
-    
-    <!-- Botões com delays sequenciais -->
-    <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
-      <img src="imagens/botao-corretora.png" alt="Corretora" />
-    </a>
-
-    <a href="https://wa.me/5522992568259?text=Quero%20agendar%20uma%20alavancagem!" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
-      <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
-    </a>
-
-    
-    
-    <a href="https://t.me/RBOB146" class="botao-imagem" style="animation-delay: 1.8s;" target="_blank">
-      <img src="imagens/botao-sinais.png" alt="Sala de Sinais" />
-    </a>
-
-    <div class="container">
-  <!-- ... outros botões ... -->
-  <a href="https://pay.hotmart.com/S98634850D?off=zepj63xj&checkoutMode=10" class="botao-imagem" style="animation-delay: 2s;" target="_blank">
-    <img src="imagens/botao-paginadevendas.png" alt="Página de Vendas" />
-  </a>
-
-  
-</div>
-
+      <a href="https://pay.hotmart.com/S98634850D?off=zepj63xj&checkoutMode=10" class="botao-imagem" style="animation-delay: 2s;" target="_blank">
+        <img src="imagens/botao-paginadevendas.png" alt="Página de Vendas" />
+      </a>
+    </div>
+  </div>
 
   <footer>
     © 2025 Arthur Martins. Todos os direitos reservados.
