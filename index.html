@@ -12,9 +12,17 @@
       margin: 0;
       padding: 30px 20px;
       font-family: Arial, sans-serif;
-      background: #000;
+      background: linear-gradient(135deg, #0a0a0a, #1a001f, #0a0a0a);
+      background-size: 400% 400%;
+      animation: backgroundMove 25s ease infinite;
       color: #fff;
       text-align: center;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     .container {
@@ -22,7 +30,6 @@
       margin: auto;
     }
 
-    /* CONTAINER COM EFEITO DE AURA */
     .foto-container {
       position: relative;
       width: 180px;
@@ -142,7 +149,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- FOTO COM FUNDO ANIMADO -->
+    <!-- FOTO COM AURA -->
     <div class="foto-container">
       <img src="imagens/minhafoto.png" alt="Arthur Martins" class="imagem-destaque" />
     </div>
