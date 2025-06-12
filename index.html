@@ -8,113 +8,41 @@
   <meta property="og:image" content="imagens/minhafoto.png">
   <meta property="og:title" content="Link da Bio | Trader Profissional">
 
-
-
-
-
-
-
-  
-
-
-<!-- Faixa Carrossel -->
-<div class="faixa-carrossel">
-  <div class="carrossel-conteudo">
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-   <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-  </div>
-</div>
-
-<style>
-.faixa-carrossel {
-  width: 100%;
-  overflow: hidden;
-  background: #111;
-  height: 60px; /* Altura da faixa */
-  border-top: 2px solid #444;
-  border-bottom: 2px solid #444;
-}
-
-.carrossel-conteudo {
-  display: flex;
-  align-items: center;
-  animation: scrollCarrossel 20s linear infinite;
-}
-
-.carrossel-conteudo img {
-  height: 40px; /* Altura da logo */
-  margin: 0 30px;
-  opacity: 0.9;
-  transition: transform 0.3s;
-}
-
-.carrossel-conteudo img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-@keyframes scrollCarrossel {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-  
   <style>
+    /* Carrossel */
+    .faixa-carrossel {
+      width: 100%;
+      overflow: hidden;
+      background: #111;
+      height: 60px;
+      border-top: 2px solid #444;
+      border-bottom: 2px solid #444;
+    }
+
+    .carrossel-conteudo {
+      display: flex;
+      align-items: center;
+      animation: scrollCarrossel 20s linear infinite;
+    }
+
+    .carrossel-conteudo img {
+      height: 40px;
+      margin: 0 30px;
+      opacity: 0.9;
+      transition: transform 0.3s;
+    }
+
+    .carrossel-conteudo img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    @keyframes scrollCarrossel {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Estilos do restante do site */
     body {
       margin: 0;
       padding: 0;
@@ -143,7 +71,6 @@
       width: 100vw;
       height: 500px;
       margin: 0 auto 40px;
-      background-color: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -154,43 +81,11 @@
       max-width: 80%;
       max-height: 80%;
       object-fit: contain;
-      border: none;
-      position: relative;
-      z-index: 2;
       transition: transform 0.3s ease;
     }
 
     .imagem-destaque:hover {
       transform: scale(1.05);
-    }
-
-    @media (max-width: 768px) {
-      .foto-container {
-        width: 95vw;
-        height: 280px;
-        border-radius: 14px;
-      }
-
-      .imagem-destaque {
-        max-width: 85%;
-        max-height: 85%;
-      }
-    }
-
-    .seta-animada {
-      width: 50px;
-      margin: 20px auto;
-      animation: bounce 2s infinite;
-      cursor: pointer;
-    }
-
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(15px);
-      }
     }
 
     .botoes {
@@ -232,12 +127,8 @@
     }
 
     @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.02);
-      }
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
     }
 
     @media (min-width: 768px) {
@@ -250,65 +141,58 @@
       margin-top: 50px;
       font-size: 0.85rem;
       color: #777;
+      background-color: #000;
+      padding: 20px;
     }
   </style>
-
-
-
 </head>
 <body>
+
+  <!-- ✅ CARROSSEL AGORA DENTRO DO BODY -->
+  <div class="faixa-carrossel">
+    <div class="carrossel-conteudo">
+      <!-- Coloque quantas logos quiser -->
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <!-- Repita conforme necessário -->
+    </div>
+  </div>
+
+  <!-- Imagem principal -->
   <div class="foto-container">
     <img src="imagens/minhafoto.png" alt="Foto" class="imagem-destaque" />
   </div>
 
-
-
-
-
-
-
-  
-
-
-
-
-
-  
+  <!-- Botões -->
   <div class="container" id="botoes">
     <div class="botoes">
-      <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
+      <a href="https://trade.obynexbroker.com/register?aff=757282" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
         <img src="imagens/botao-corretora.png" alt="Corretora" />
       </a>
-
-      <a href="https://wa.me/5522992568259?text=Quero%20agendar%20uma%20alavancagem!" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
+      <a href="https://wa.me/5522992568259" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
         <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
       </a>
-
       <a href="https://t.me/RBOB146" class="botao-imagem" style="animation-delay: 1.8s;" target="_blank">
         <img src="imagens/botao-sinais.png" alt="Sala de Sinais" />
       </a>
-
-      <a href="https://pay.hotmart.com/S98634850D?off=zepj63xj&checkoutMode=10" class="botao-imagem" style="animation-delay: 2s;" target="_blank">
+      <a href="https://pay.hotmart.com/S98634850D" class="botao-imagem" style="animation-delay: 2s;" target="_blank">
         <img src="imagens/botao-paginadevendas.png" alt="Página de Vendas" />
       </a>
-
       <a href="https://www.youtube.com/channel/UCgBj1Oea0IRNhSaYKIQ0w1g" class="botao-imagem" style="animation-delay: 2.2s;" target="_blank">
         <img src="imagens/botao-youtube.png" alt="YouTube" />
       </a>
-
       <a href="#" class="botao-imagem" style="animation-delay: 2.4s;" target="_blank">
         <img src="imagens/botao-instagram.png" alt="Instagram" />
       </a>
     </div>
   </div>
 
-
-
-
-
-  
-<footer style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 20px; background-color: #000; color: #fff;">
-  <img src="imagens/logo.png" alt="Logo Thurzin Trader" style="height: 40px;">
-  © 2025 Thurzin Trader - Todos os direitos reservados.
-</footer>
-
+  <!-- Rodapé -->
+  <footer>
+    <img src="imagens/logo.png" alt="Logo Thurzin Trader" style="height: 40px;">
+    © 2025 Thurzin Trader - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
