@@ -86,16 +86,20 @@
       }
     }
 
+    /* NOVO ESTILO DOS BOTOES */
     .botoes {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+      flex-wrap: nowrap; /* mantém numa linha no desktop */
+      justify-content: space-between; /* espaça igualmente */
+      gap: 20px;
     }
 
     .botao-imagem {
-      width: 100%;
-      max-width: 100%;
+      flex: 1 1 auto; /* cresce para ocupar espaço */
+      max-width: none;
+      width: auto;
+      min-width: 150px;
+
       border-radius: 30px;
       overflow: hidden;
       border: 2px solid #ccc;
@@ -133,9 +137,18 @@
       }
     }
 
-    @media (min-width: 768px) {
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .botoes {
+        flex-wrap: wrap; /* volta a quebrar linhas no mobile */
+        justify-content: center;
+        gap: 30px;
+      }
+
       .botao-imagem {
         width: 48%;
+        max-width: 100%;
+        min-width: auto;
       }
     }
 
@@ -145,111 +158,91 @@
       color: #777;
     }
   </style>
-
-
-
 </head>
 <body>
   <div class="foto-container">
     <img src="imagens/minhafoto.png" alt="Foto" class="imagem-destaque" />
   </div>
 
-
-
-
-
-
-
-  
-
-<!-- Faixa Carrossel -->
-<div class="faixa-carrossel">
-  <div class="carrossel-conteudo">
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-   <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
-    <img src="imagens/logo.png" alt="Logo" />
+  <!-- Faixa Carrossel -->
+  <div class="faixa-carrossel">
+    <div class="carrossel-conteudo">
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+      <img src="imagens/logo.png" alt="Logo" />
+    </div>
   </div>
-</div>
 
-<style>
-.faixa-carrossel {
-  width: 100%;
-  overflow: hidden;
-  background: #111;
-  height: 60px; /* Altura da faixa */
-  border-top: 2px solid #444;
-  border-bottom: 2px solid #444;
-}
-
-.carrossel-conteudo {
-  display: flex;
-  align-items: center;
-  animation: scrollCarrossel 20s linear infinite;
-}
-
-.carrossel-conteudo img {
-  height: 40px; /* Altura da logo */
-  margin: 0 30px;
-  opacity: 0.9;
-  transition: transform 0.3s;
-}
-
-.carrossel-conteudo img:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-@keyframes scrollCarrossel {
-  0% {
-    transform: translateX(0);
+  <style>
+  .faixa-carrossel {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    height: 60px; /* Altura da faixa */
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
   }
-  100% {
-    transform: translateX(-50%);
+
+  .carrossel-conteudo {
+    display: flex;
+    align-items: center;
+    animation: scrollCarrossel 20s linear infinite;
   }
-}
-</style>
 
+  .carrossel-conteudo img {
+    height: 40px; /* Altura da logo */
+    margin: 0 30px;
+    opacity: 0.9;
+    transition: transform 0.3s;
+  }
 
+  .carrossel-conteudo img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
 
+  @keyframes scrollCarrossel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  </style>
 
-
-
-
-
-
-  
   <div class="container" id="botoes">
     <div class="botoes">
       <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
@@ -265,21 +258,23 @@
       </a>
 
       <a href="https://pay.hotmart.com/S98634850D?off=zepj63xj&checkoutMode=10" class="botao-imagem" style="animation-delay: 2s;" target="_blank">
-        <img src="imagens/botao-paginadevendas.png" alt="Página de Vendas" />
+        <img src="imagens/botao-mti.png" alt="Método Trader Inteligente" />
       </a>
 
-      <a href="https://www.youtube.com/channel/UCgBj1Oea0IRNhSaYKIQ0w1g" class="botao-imagem" style="animation-delay: 2.2s;" target="_blank">
-        <img src="imagens/botao-youtube.png" alt="YouTube" />
+      <a href="https://pay.hotmart.com/O33518641H?off=zepj63xj&checkoutMode=10" class="botao-imagem" style="animation-delay: 2.4s;" target="_blank">
+        <img src="imagens/botao-codigo.png" alt="Código da Alavancagem" />
       </a>
 
-      <a href="#" class="botao-imagem" style="animation-delay: 2.4s;" target="_blank">
-        <img src="imagens/botao-instagram.png" alt="Instagram" />
+      <a href="https://pay.hotmart.com/O69695336X?off=zepj63xj&checkoutMode=10" class="botao-imagem" style="animation-delay: 2.6s;" target="_blank">
+        <img src="imagens/botao-ebook.png" alt="Ebook" />
       </a>
     </div>
   </div>
 
+  <img src="imagens/seta.png" alt="Seta Animada" class="seta-animada" />
+
   <footer>
-    © 2025. Todos os direitos reservados.
+    © 2025 Thurzin Trader - Todos os direitos reservados.
   </footer>
 </body>
 </html>
