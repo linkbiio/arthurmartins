@@ -18,7 +18,7 @@
     }
 
     .container {
-      max-width: 520px;
+      max-width: 1000px;
       margin: auto;
     }
 
@@ -48,14 +48,14 @@
 
     .botoes {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
     }
 
     .botao-imagem {
-      display: block;
       width: 100%;
-      max-width: 550px;
+      max-width: 100%;
       border-radius: 30px;
       overflow: hidden;
       border: 2px solid #ccc;
@@ -66,15 +66,15 @@
       animation: fadeIn 0.8s ease-out forwards;
     }
 
-    .botao-imagem:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #ccccccaa;
-    }
-
     .botao-imagem img {
       width: 100%;
       height: auto;
       display: block;
+    }
+
+    .botao-imagem:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ccccccaa;
     }
 
     @keyframes fadeIn {
@@ -84,26 +84,16 @@
       }
     }
 
+    @media (min-width: 768px) {
+      .botao-imagem {
+        width: 48%;
+      }
+    }
+
     footer {
       margin-top: 50px;
       font-size: 0.85rem;
       color: #777;
-    }
-
-    @media (min-width: 768px) {
-      .botoes {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-      }
-
-      .botao-imagem {
-        width: 48%;
-        max-width: none;
-        margin: 0;
-        border-radius: 32px;
-      }
     }
   </style>
 </head>
@@ -115,7 +105,6 @@
       Algumas ferramentas que vão ajudar você nesse mercado!
     </div>
 
-    <!-- Botões agrupados -->
     <div class="botoes">
       <a href="https://trade.obynexbroker.com/register?aff=757282&aff_model=revenue&afftrack=" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
         <img src="imagens/botao-corretora.png" alt="Corretora" />
