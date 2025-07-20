@@ -10,12 +10,11 @@
   <meta property="og:title" content="Link da Bio | Trader Profissional">
 
   <style>
-    /* Fundo preto sólido */
     body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #000000; /* fundo preto sólido */
+      background-color: #000000;
       color: #fff;
       text-align: center;
     }
@@ -23,9 +22,9 @@
     .faixa-carrossel {
       width: 100%;
       overflow: hidden;
-      background-color: #000000; /* preto sólido */
+      background-color: #000000;
       height: 60px;
-      border-top: 2px solid #222; /* bordas um pouco mais escuras */
+      border-top: 2px solid #222;
       border-bottom: 2px solid #222;
     }
 
@@ -67,7 +66,7 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      flex-direction: column; /* para alinhar a imagem e o texto verticalmente */
+      flex-direction: column;
     }
 
     .imagem-destaque {
@@ -81,23 +80,42 @@
       transform: scale(1.05);
     }
 
-    /* Texto abaixo da imagem */
     .texto-embaixo {
       color: #fff;
       margin-top: 15px;
       font-size: 1.2rem;
     }
 
+    /* NOVO layout em grid para os botões */
     .botoes {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
       gap: 30px;
+      justify-content: center;
+    }
+
+    /* Mobile: 1 por linha */
+    @media (max-width: 767px) {
+      .botoes {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Tablet: 2 por linha */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .botoes {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Desktop: 3 por linha */
+    @media (min-width: 1024px) {
+      .botoes {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
     .botao-imagem {
       width: 100%;
-      max-width: 100%;
       border-radius: 30px;
       overflow: hidden;
       border: 2px solid #444;
@@ -131,12 +149,6 @@
       50% { transform: scale(1.02); }
     }
 
-    @media (min-width: 768px) {
-      .botao-imagem {
-        width: 48%;
-      }
-    }
-
     footer {
       margin-top: 50px;
       font-size: 0.85rem;
@@ -160,51 +172,11 @@
   <div class="faixa-carrossel">
     <div class="carrossel-conteudo">
       <!-- Repita quantas imagens quiser -->
+      <!-- ... todas as imagens ... -->
       <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      <img src="imagens/logo.png" alt="Logo" />
-      
-      <!-- ... -->
-      <!-- Copie mais logos se quiser repetir o efeito contínuo -->
+      <!-- ... repetir se necessário ... -->
     </div>
   </div>
-
- 
 
   <!-- Botões -->
   <div class="container" id="botoes">
@@ -212,40 +184,27 @@
       <a href="https://trade.obynexbroker.com/register?aff=757282" class="botao-imagem" style="animation-delay: 0.8s;" target="_blank">
         <img src="imagens/botao-corretora.png" alt="Corretora" />
       </a>
-    <a href="https://api.whatsapp.com/send?phone=5522997301385&text=Quero+saber+mais%21" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
-  <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
-</a>
-      
- <!-- Botão Grupo de Lives no WhatsApp -->
-<a href="https://chat.whatsapp.com/BqocKGrw95I5WWdfJXrdAg" class="botao-imagem" style="animation-delay: 2.8s;" target="_blank">
-  <img src="imagens/botao-grupo.png" alt="Grupo das Lives no WhatsApp" />
-</a>
-      
+      <a href="https://api.whatsapp.com/send?phone=5522997301385&text=Quero+saber+mais%21" class="botao-imagem" style="animation-delay: 1s;" target="_blank">
+        <img src="imagens/botao-whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="https://chat.whatsapp.com/BqocKGrw95I5WWdfJXrdAg" class="botao-imagem" style="animation-delay: 2.8s;" target="_blank">
+        <img src="imagens/botao-grupo.png" alt="Grupo das Lives no WhatsApp" />
       </a>
       <a href="https://www.youtube.com/channel/UCgBj1Oea0IRNhSaYKIQ0w1g" class="botao-imagem" style="animation-delay: 2.2s;" target="_blank">
         <img src="imagens/botao-youtube.png" alt="YouTube" />
       </a>
       <a href="https://www.instagram.com/thurzintrader?igsh=dzNhNzZ3d3djd2Q0&utm_source=qr" class="botao-imagem" style="animation-delay: 2.4s;" target="_blank">
-  <img src="imagens/botao-instagram.png" alt="Instagram" />
-</a>
-      
-<!-- Botão TikTok -->
-    <a href="https://www.tiktok.com/@thurzintrader" class="botao-imagem" style="animation-delay: 2.6s;" target="_blank">
-      <img src="imagens/botao-tiktok.png" alt="TikTok" />
-    </a>
-
-      <!-- Botão Mentoria -->
-<a href="https://wa.me/5522997301385?text=Quero+fazer+sua+mentoria%21" class="botao-imagem" style="animation-delay: 2.9s;" target="_blank">
-  <img src="imagens/botao-mentoria.png" alt="Mentoria 1x1" />
-</a>
-
-<!-- Botão Desafio -->
-<a href="https://thurzintrader.com/desafio" class="botao-imagem" style="animation-delay: 3.1s;" target="_blank">
-  <img src="imagens/botao-desafio.png" alt="Desafio 7 Dias" />
-</a>
-
-    
-      
+        <img src="imagens/botao-instagram.png" alt="Instagram" />
+      </a>
+      <a href="https://www.tiktok.com/@thurzintrader" class="botao-imagem" style="animation-delay: 2.6s;" target="_blank">
+        <img src="imagens/botao-tiktok.png" alt="TikTok" />
+      </a>
+      <a href="https://wa.me/5522997301385?text=Quero+fazer+sua+mentoria%21" class="botao-imagem" style="animation-delay: 2.9s;" target="_blank">
+        <img src="imagens/botao-mentoria.png" alt="Mentoria 1x1" />
+      </a>
+      <a href="https://thurzintrader.com/desafio" class="botao-imagem" style="animation-delay: 3.1s;" target="_blank">
+        <img src="imagens/botao-desafio.png" alt="Desafio 7 Dias" />
+      </a>
     </div>
   </div>
 
